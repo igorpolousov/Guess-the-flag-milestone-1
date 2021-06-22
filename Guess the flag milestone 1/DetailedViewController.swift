@@ -11,16 +11,19 @@ class DetailedViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     
     
-    var selctedImage: String?
+    var selectedImage: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let imageToLoad = selctedImage {
+        if let imageToLoad = selectedImage {
             imageView.image = UIImage(named: imageToLoad)
         }
         
-        title = selctedImage
+        title = selectedImage?.capitalizingFirstLetter()
+        title = title?.replacingOccurrences(of: "@3x.png", with: "")
+        title = title?.replacingOccurrences(of: "Uk", with: "UK")
+        title = title?.replacingOccurrences(of: "Us", with: "US")
         navigationItem.largeTitleDisplayMode = .never
         
     }
