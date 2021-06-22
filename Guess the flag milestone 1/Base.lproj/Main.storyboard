@@ -46,20 +46,34 @@
             </objects>
             <point key="canvasLocation" x="830" y="63"/>
         </scene>
-        <!--View Controller-->
+        <!--Detailed View Controller-->
         <scene sceneID="BOg-rh-Dfr">
             <objects>
-                <viewController id="TBb-rP-ZSJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Detail" id="TBb-rP-ZSJ" customClass="DetailedViewController" customModule="Guess_the_flag_milestone_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PxV-DR-maF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="69O-q8-Gbs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="cNU-gK-atQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="69O-q8-Gbs" firstAttribute="centerX" secondItem="PxV-DR-maF" secondAttribute="centerX" id="QUw-lH-OLR"/>
+                            <constraint firstItem="69O-q8-Gbs" firstAttribute="centerY" secondItem="PxV-DR-maF" secondAttribute="centerY" id="jBs-CI-I7q"/>
+                            <constraint firstItem="69O-q8-Gbs" firstAttribute="top" secondItem="PxV-DR-maF" secondAttribute="topMargin" constant="-44" id="oqi-4w-k3u"/>
+                            <constraint firstItem="69O-q8-Gbs" firstAttribute="leading" secondItem="cNU-gK-atQ" secondAttribute="leading" id="qbo-JB-c59"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="69O-q8-Gbs" id="7gN-oZ-Wno"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ru-9k-g1b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557" y="63"/>
+            <point key="canvasLocation" x="1556.521739130435" y="62.946428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fzg-ip-usw">
