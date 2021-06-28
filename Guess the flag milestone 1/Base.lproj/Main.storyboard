@@ -12,22 +12,22 @@
         <scene sceneID="kbw-2e-Pgu">
             <objects>
                 <tableViewController id="Hn0-Q7-1uT" customClass="TableViewController" customModule="Guess_the_flag_milestone_1" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UHI-ho-u8Z">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UHI-ho-u8Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="baU-Pl-DWt" style="IBUITableViewCellStyleDefault" id="6eZ-ub-MtF">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="baU-Pl-DWt" style="IBUITableViewCellStyleDefault" id="6eZ-ub-MtF">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="53"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6eZ-ub-MtF" id="8g7-Ko-5gU">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="53"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="baU-Pl-DWt">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="356.5" height="53"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -54,17 +54,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="69O-q8-Gbs">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="69O-q8-Gbs">
+                                <rect key="frame" x="7" y="128" width="400" height="300"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cNU-gK-atQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="69O-q8-Gbs" firstAttribute="centerX" secondItem="PxV-DR-maF" secondAttribute="centerX" id="QUw-lH-OLR"/>
-                            <constraint firstItem="69O-q8-Gbs" firstAttribute="centerY" secondItem="PxV-DR-maF" secondAttribute="centerY" id="jBs-CI-I7q"/>
-                            <constraint firstItem="69O-q8-Gbs" firstAttribute="top" secondItem="PxV-DR-maF" secondAttribute="topMargin" constant="-44" id="oqi-4w-k3u"/>
-                            <constraint firstItem="69O-q8-Gbs" firstAttribute="leading" secondItem="cNU-gK-atQ" secondAttribute="leading" id="qbo-JB-c59"/>
+                            <constraint firstItem="69O-q8-Gbs" firstAttribute="centerX" secondItem="PxV-DR-maF" secondAttribute="centerX" id="GLE-2j-mFH"/>
+                            <constraint firstItem="69O-q8-Gbs" firstAttribute="top" secondItem="cNU-gK-atQ" secondAttribute="top" constant="84" id="ak9-Li-xMa"/>
+                            <constraint firstItem="cNU-gK-atQ" firstAttribute="bottom" secondItem="69O-q8-Gbs" secondAttribute="bottom" constant="434" id="mGF-Ub-gmD"/>
+                            <constraint firstItem="69O-q8-Gbs" firstAttribute="leading" secondItem="cNU-gK-atQ" secondAttribute="leading" constant="7" id="qvG-JZ-Wrs"/>
                         </constraints>
                     </view>
                     <connections>

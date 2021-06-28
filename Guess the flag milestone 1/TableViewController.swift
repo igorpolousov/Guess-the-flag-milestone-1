@@ -1,7 +1,7 @@
 //
 //  TableViewController.swift
-//  Guess the flag milestone 1
-//
+//  Guess the flag milestone app 1
+//  Day 23
 //  Created by Igor Polousov on 22.06.2021.
 //
 
@@ -11,6 +11,7 @@ class TableViewController: UITableViewController {
 
     var pictures = [String]()
     var names = [String]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +36,13 @@ class TableViewController: UITableViewController {
         }
         print(names)
         print(pictures)
+        
+        
     }
 
 
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return names.count
     }
@@ -48,6 +53,9 @@ class TableViewController: UITableViewController {
         
         cell.textLabel?.text = names[indexPath.row]
         cell.imageView?.image = UIImage(named: pictures[indexPath.row])
+        cell.imageView?.layer.borderWidth = 2
+        cell.imageView?.layer.borderColor = UIColor.black.cgColor
+        
         return cell
     }
 
@@ -57,6 +65,8 @@ class TableViewController: UITableViewController {
             navigationController?.pushViewController(vc, animated: true)
         }
     }
+    
+    
     
 }
 
